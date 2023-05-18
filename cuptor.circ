@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="4.0"/>
+    <comp lib="0" loc="(1000,1310)" name="Ground"/>
+    <comp lib="0" loc="(1030,1120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="T30"/>
+      <a name="output" val="true"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(1040,1060)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+    </comp>
+    <comp lib="0" loc="(1040,1090)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="T5"/>
+      <a name="output" val="true"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(1070,1230)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1090,1060)" name="Ground"/>
+    <comp lib="0" loc="(1110,1000)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(1370,1010)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="0" loc="(140,1200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="RESET"/>
+    </comp>
+    <comp lib="0" loc="(1400,1090)" name="Splitter">
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="0" loc="(150,1120)" name="Clock">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(1730,920)" name="Splitter">
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+    </comp>
+    <comp lib="0" loc="(450,920)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="TEMP"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(480,1210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="TEMP_SELECTION"/>
+      <a name="output" val="true"/>
+      <a name="width" val="3"/>
+    </comp>
+    <comp lib="0" loc="(990,1290)" name="Splitter">
+      <a name="fanout" val="5"/>
+      <a name="incoming" val="5"/>
+    </comp>
+    <comp lib="5" loc="(100,1250)" name="Button">
+      <a name="label" val="TEMP_UP"/>
+    </comp>
+    <comp lib="5" loc="(100,1290)" name="Button">
+      <a name="label" val="TEMP_DOWN"/>
+    </comp>
+    <comp lib="5" loc="(1000,920)" name="LED">
+      <a name="label" val="PH"/>
+    </comp>
+    <comp lib="5" loc="(1000,950)" name="LED">
+      <a name="label" val="FI"/>
+    </comp>
+    <comp lib="5" loc="(1000,980)" name="LED">
+      <a name="label" val="CK"/>
+    </comp>
+    <comp lib="5" loc="(1210,840)" name="7-Segment Display">
+      <a name="active" val="false"/>
+      <a name="decimalPoint" val="false"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp lib="5" loc="(1610,850)" name="7-Segment Display">
+      <a name="active" val="false"/>
+      <a name="decimalPoint" val="false"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp lib="5" loc="(1650,850)" name="7-Segment Display">
+      <a name="active" val="false"/>
+      <a name="decimalPoint" val="false"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp lib="5" loc="(320,970)" name="Button">
+      <a name="label" val="START"/>
+    </comp>
+    <comp loc="(1320,1180)" name="Binary_to_decimal_converter">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(1360,1030)" name="hex2_7seg">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(1390,1090)" name="hex2_7seg">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(1620,1200)" name="hex2_7seg">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(430,1180)" name="Temperature_Selector">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(870,990)" name="Cuptor">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(100,1250)" to="(190,1250)"/>
+    <wire from="(100,1290)" to="(200,1290)"/>
+    <wire from="(1000,1310)" to="(1050,1310)"/>
+    <wire from="(1010,1240)" to="(1050,1240)"/>
+    <wire from="(1010,1250)" to="(1050,1250)"/>
+    <wire from="(1010,1260)" to="(1050,1260)"/>
+    <wire from="(1010,1270)" to="(1050,1270)"/>
+    <wire from="(1010,1280)" to="(1050,1280)"/>
+    <wire from="(1030,1060)" to="(1030,1090)"/>
+    <wire from="(1030,1060)" to="(1040,1060)"/>
+    <wire from="(1030,1090)" to="(1040,1090)"/>
+    <wire from="(1050,1290)" to="(1050,1300)"/>
+    <wire from="(1050,1300)" to="(1050,1310)"/>
+    <wire from="(1060,1010)" to="(1060,1030)"/>
+    <wire from="(1060,1010)" to="(1090,1010)"/>
+    <wire from="(1060,1040)" to="(1070,1040)"/>
+    <wire from="(1060,1050)" to="(1080,1050)"/>
+    <wire from="(1070,1020)" to="(1070,1040)"/>
+    <wire from="(1070,1020)" to="(1090,1020)"/>
+    <wire from="(1070,1230)" to="(1090,1230)"/>
+    <wire from="(1080,1030)" to="(1080,1050)"/>
+    <wire from="(1080,1030)" to="(1090,1030)"/>
+    <wire from="(1090,1040)" to="(1090,1060)"/>
+    <wire from="(1090,1180)" to="(1090,1230)"/>
+    <wire from="(1090,1180)" to="(1100,1180)"/>
+    <wire from="(1110,1000)" to="(1110,1030)"/>
+    <wire from="(1110,1030)" to="(1140,1030)"/>
+    <wire from="(1160,1090)" to="(1160,1130)"/>
+    <wire from="(1160,1090)" to="(1170,1090)"/>
+    <wire from="(1160,1130)" to="(1400,1130)"/>
+    <wire from="(1210,790)" to="(1210,840)"/>
+    <wire from="(1210,790)" to="(1360,790)"/>
+    <wire from="(1210,900)" to="(1210,970)"/>
+    <wire from="(1210,970)" to="(1340,970)"/>
+    <wire from="(1220,800)" to="(1220,840)"/>
+    <wire from="(1220,800)" to="(1350,800)"/>
+    <wire from="(1220,900)" to="(1220,960)"/>
+    <wire from="(1220,960)" to="(1330,960)"/>
+    <wire from="(1230,820)" to="(1230,840)"/>
+    <wire from="(1230,820)" to="(1300,820)"/>
+    <wire from="(1230,900)" to="(1230,950)"/>
+    <wire from="(1230,950)" to="(1320,950)"/>
+    <wire from="(1240,810)" to="(1240,840)"/>
+    <wire from="(1240,810)" to="(1310,810)"/>
+    <wire from="(1300,820)" to="(1300,990)"/>
+    <wire from="(1310,810)" to="(1310,990)"/>
+    <wire from="(1320,1180)" to="(1400,1180)"/>
+    <wire from="(1320,1200)" to="(1400,1200)"/>
+    <wire from="(1320,950)" to="(1320,990)"/>
+    <wire from="(1330,960)" to="(1330,990)"/>
+    <wire from="(1340,970)" to="(1340,990)"/>
+    <wire from="(1350,800)" to="(1350,990)"/>
+    <wire from="(1360,1030)" to="(1370,1030)"/>
+    <wire from="(1360,790)" to="(1360,990)"/>
+    <wire from="(1370,1010)" to="(1370,1030)"/>
+    <wire from="(1390,1090)" to="(1400,1090)"/>
+    <wire from="(140,1200)" to="(180,1200)"/>
+    <wire from="(1400,1130)" to="(1400,1180)"/>
+    <wire from="(1420,1020)" to="(1600,1020)"/>
+    <wire from="(1420,1030)" to="(1440,1030)"/>
+    <wire from="(1420,1040)" to="(1650,1040)"/>
+    <wire from="(1420,1050)" to="(1440,1050)"/>
+    <wire from="(1420,1060)" to="(1430,1060)"/>
+    <wire from="(1420,1070)" to="(1480,1070)"/>
+    <wire from="(1420,1080)" to="(1450,1080)"/>
+    <wire from="(1430,1060)" to="(1430,1150)"/>
+    <wire from="(1430,1150)" to="(1670,1150)"/>
+    <wire from="(1440,1050)" to="(1440,1130)"/>
+    <wire from="(1440,1130)" to="(1660,1130)"/>
+    <wire from="(1440,970)" to="(1440,1030)"/>
+    <wire from="(1440,970)" to="(1500,970)"/>
+    <wire from="(1450,990)" to="(1450,1080)"/>
+    <wire from="(1450,990)" to="(1510,990)"/>
+    <wire from="(1480,1010)" to="(1480,1070)"/>
+    <wire from="(1480,1010)" to="(1690,1010)"/>
+    <wire from="(150,1120)" to="(200,1120)"/>
+    <wire from="(1500,790)" to="(1500,970)"/>
+    <wire from="(1500,790)" to="(1660,790)"/>
+    <wire from="(1510,780)" to="(1510,990)"/>
+    <wire from="(1510,780)" to="(1670,780)"/>
+    <wire from="(1600,800)" to="(1600,1020)"/>
+    <wire from="(1600,800)" to="(1650,800)"/>
+    <wire from="(1610,820)" to="(1610,850)"/>
+    <wire from="(1610,820)" to="(1750,820)"/>
+    <wire from="(1610,910)" to="(1610,920)"/>
+    <wire from="(1610,920)" to="(1640,920)"/>
+    <wire from="(1620,1200)" to="(1830,1200)"/>
+    <wire from="(1620,810)" to="(1620,850)"/>
+    <wire from="(1620,810)" to="(1760,810)"/>
+    <wire from="(1620,910)" to="(1620,940)"/>
+    <wire from="(1620,940)" to="(1800,940)"/>
+    <wire from="(1630,830)" to="(1630,850)"/>
+    <wire from="(1630,830)" to="(1780,830)"/>
+    <wire from="(1630,910)" to="(1630,930)"/>
+    <wire from="(1630,930)" to="(1760,930)"/>
+    <wire from="(1640,840)" to="(1640,850)"/>
+    <wire from="(1640,840)" to="(1770,840)"/>
+    <wire from="(1640,920)" to="(1640,960)"/>
+    <wire from="(1640,960)" to="(1790,960)"/>
+    <wire from="(1650,800)" to="(1650,850)"/>
+    <wire from="(1650,910)" to="(1650,1040)"/>
+    <wire from="(1660,790)" to="(1660,850)"/>
+    <wire from="(1660,910)" to="(1660,1130)"/>
+    <wire from="(1670,780)" to="(1670,850)"/>
+    <wire from="(1670,910)" to="(1670,1150)"/>
+    <wire from="(1680,850)" to="(1690,850)"/>
+    <wire from="(1690,850)" to="(1690,1010)"/>
+    <wire from="(1730,920)" to="(1730,950)"/>
+    <wire from="(1730,950)" to="(1830,950)"/>
+    <wire from="(1750,820)" to="(1750,850)"/>
+    <wire from="(1750,860)" to="(1760,860)"/>
+    <wire from="(1750,870)" to="(1790,870)"/>
+    <wire from="(1750,880)" to="(1800,880)"/>
+    <wire from="(1750,890)" to="(1760,890)"/>
+    <wire from="(1750,900)" to="(1770,900)"/>
+    <wire from="(1750,910)" to="(1780,910)"/>
+    <wire from="(1760,810)" to="(1760,860)"/>
+    <wire from="(1760,890)" to="(1760,930)"/>
+    <wire from="(1770,840)" to="(1770,900)"/>
+    <wire from="(1780,830)" to="(1780,910)"/>
+    <wire from="(1790,870)" to="(1790,960)"/>
+    <wire from="(180,1160)" to="(180,1200)"/>
+    <wire from="(180,1160)" to="(250,1160)"/>
+    <wire from="(180,1200)" to="(210,1200)"/>
+    <wire from="(1800,880)" to="(1800,940)"/>
+    <wire from="(1830,950)" to="(1830,1200)"/>
+    <wire from="(190,1220)" to="(190,1250)"/>
+    <wire from="(190,1220)" to="(210,1220)"/>
+    <wire from="(200,1120)" to="(200,1180)"/>
+    <wire from="(200,1120)" to="(210,1120)"/>
+    <wire from="(200,1180)" to="(210,1180)"/>
+    <wire from="(200,1240)" to="(200,1290)"/>
+    <wire from="(200,1240)" to="(210,1240)"/>
+    <wire from="(210,1000)" to="(210,1120)"/>
+    <wire from="(210,1000)" to="(640,1000)"/>
+    <wire from="(250,1020)" to="(250,1160)"/>
+    <wire from="(250,1020)" to="(510,1020)"/>
+    <wire from="(320,970)" to="(540,970)"/>
+    <wire from="(430,1180)" to="(440,1180)"/>
+    <wire from="(430,1200)" to="(460,1200)"/>
+    <wire from="(440,920)" to="(440,1180)"/>
+    <wire from="(440,920)" to="(450,920)"/>
+    <wire from="(460,1060)" to="(460,1200)"/>
+    <wire from="(460,1060)" to="(640,1060)"/>
+    <wire from="(460,1200)" to="(480,1200)"/>
+    <wire from="(480,1200)" to="(480,1210)"/>
+    <wire from="(510,1010)" to="(510,1020)"/>
+    <wire from="(510,1010)" to="(650,1010)"/>
+    <wire from="(540,1040)" to="(640,1040)"/>
+    <wire from="(540,970)" to="(540,1040)"/>
+    <wire from="(640,1030)" to="(640,1040)"/>
+    <wire from="(640,1030)" to="(650,1030)"/>
+    <wire from="(640,1050)" to="(640,1060)"/>
+    <wire from="(640,1050)" to="(650,1050)"/>
+    <wire from="(640,990)" to="(640,1000)"/>
+    <wire from="(640,990)" to="(650,990)"/>
+    <wire from="(870,1010)" to="(880,1010)"/>
+    <wire from="(870,1030)" to="(880,1030)"/>
+    <wire from="(870,1050)" to="(910,1050)"/>
+    <wire from="(870,1070)" to="(890,1070)"/>
+    <wire from="(870,990)" to="(920,990)"/>
+    <wire from="(880,1010)" to="(880,1020)"/>
+    <wire from="(880,1020)" to="(960,1020)"/>
+    <wire from="(880,1030)" to="(880,1040)"/>
+    <wire from="(880,1040)" to="(990,1040)"/>
+    <wire from="(890,1070)" to="(890,1120)"/>
+    <wire from="(890,1120)" to="(990,1120)"/>
+    <wire from="(910,1050)" to="(910,1090)"/>
+    <wire from="(910,1090)" to="(1030,1090)"/>
+    <wire from="(920,920)" to="(1000,920)"/>
+    <wire from="(920,920)" to="(920,990)"/>
+    <wire from="(960,950)" to="(1000,950)"/>
+    <wire from="(960,950)" to="(960,1020)"/>
+    <wire from="(990,1120)" to="(1030,1120)"/>
+    <wire from="(990,1120)" to="(990,1290)"/>
+    <wire from="(990,980)" to="(1000,980)"/>
+    <wire from="(990,980)" to="(990,1040)"/>
+  </circuit>
+  <vhdl name="Temperature_Selector">library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.std_logic_unsigned.all;
+
+entity Temperature_Selector is
+    Port ( clk : in  STD_LOGIC;
+           rst : in  STD_LOGIC;
+           up  : in  STD_LOGIC;
+           down : in  STD_LOGIC;
+           temp : out STD_LOGIC_VECTOR(7 downto 0);
+           temp_Selection : out STD_LOGIC_VECTOR(2 downto 0)
+         );
+end Temperature_Selector;
+
+architecture Behavioral of Temperature_Selector is
+begin
+
+    process(clk, rst, up, down)
+        variable counter : std_logic_vector(2 downto 0) := "000";
+        variable temp_sel : std_logic_vector(7 downto 0) := "01100100";
+    begin
+        if rst = '1' then
+            counter := "000";
+            temp_sel := "01100100";
+        elsif rising_edge(clk) then
+            if up = '1' then 
+                counter := counter + 1;
+            elsif down = '1' then
+                counter := counter - 1;
+            end if;
+
+            case counter is
+                when "000" =&gt;
+                    temp_sel := "01100100"; -- temperature 100
+                when "001" =&gt;
+                    temp_sel := "01110011"; -- temperature 115
+                when "010" =&gt;
+                    temp_sel := "10000010"; -- temperature 130
+                when "011" =&gt;
+                    temp_sel := "10010001"; -- temperature 145
+                when "100" =&gt;
+                    temp_sel := "10100000"; -- temperature 160
+                when "101" =&gt;
+                    temp_sel := "10101111"; -- temperature 175
+                when "110" =&gt;
+                    temp_sel := "10110110"; -- temperature 190
+                when "111" =&gt;
+                    temp_sel := "10111100"; -- temperature 200
+                when others =&gt;
+                    temp_sel := "01100100"; -- default value
+            end case;
+        end if;
+
+        temp &lt;= temp_sel;
+        temp_Selection &lt;= counter;
+    end process;
+
+end Behavioral;
+</vhdl>
+  <vhdl name="Cuptor">library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity Cuptor is
+    Port (
+        clk          : in  STD_LOGIC;
+        rst          : in  STD_LOGIC;
+        start        : in  STD_LOGIC;
+        sel          : in  STD_LOGIC_VECTOR(2 downto 0);
+        preheating   : out STD_LOGIC;
+        insertFood   : out STD_LOGIC;
+        ck           : out STD_LOGIC;
+        counter5_out : out STD_LOGIC_VECTOR(2 downto 0);
+        counter30_out: out STD_LOGIC_VECTOR(4 downto 0)
+    );
+end Cuptor;
+
+architecture Behavioral of Cuptor is
+    type state_type is (IDLE, PRE_HEATING, INSERT_FOOD, COOKING);
+    signal state, next_state : state_type;
+    signal max_count : std_logic_vector(3 downto 0) := "0101";
+    signal counter5 : std_logic_vector(2 downto 0) := "101";
+    signal counter30 : std_logic_vector(4 downto 0) := "11110";
+    signal cook : std_logic := '0';
+    signal donePreheat : std_logic := '0';
+    signal counterPreheat : std_logic_vector(3 downto 0) := "0000";
+begin
+
+    -- Next state logic
+    NEXT_STATE_LOGIC: process(state, start, counter30, counter5, donePreheat, sel)
+    begin
+        next_state &lt;= state;
+        case state is
+            when IDLE =&gt;
+                if start = '1' then
+                    next_state &lt;= PRE_HEATING;
+                end if;
+            when PRE_HEATING =&gt;
+                if donePreheat = '1' then
+                    next_state &lt;= INSERT_FOOD;
+                end if;
+            when INSERT_FOOD =&gt;
+                if start = '1' then
+                    next_state &lt;= COOKING;
+                elsif counter5 = "000" then
+                    next_state &lt;= IDLE;
+                end if;
+            when COOKING =&gt;
+                if counter30 = "00000" then
+                    next_state &lt;= IDLE;
+                end if;
+        end case;
+    end process;
+
+    -- Output logic for each state
+    OUTPUT_LOGIC: process(clk, rst)
+    begin
+
+        if rst = '1' then
+            state &lt;= IDLE;
+            counter5 &lt;= "101";
+            counter30 &lt;= "11110";
+            max_count &lt;= "0101";
+            cook &lt;= '0';
+            preheating &lt;= '0';
+            insertFood &lt;= '0';
+            counterPreheat &lt;= "0000";
+            donePreheat &lt;= '0';
+        elsif rising_edge(clk) then
+            state &lt;= next_state;
+            case state is
+                when IDLE =&gt;
+                    preheating &lt;= '0';
+                    insertFood &lt;= '0';
+                    cook &lt;= '0';
+                    counter5 &lt;= "101";
+                    counter30 &lt;= "11110";
+                    donePreheat &lt;= '0';
+
+	                case sel is
+		                when "000" =&gt;
+		                    max_count &lt;= "0101"; -- 5 seconds
+		                when "001" =&gt;
+		                    max_count &lt;= "0110"; -- 6 seconds
+		                when "010" =&gt;
+		                    max_count &lt;= "0111"; -- 7 seconds
+		                when "011" =&gt;
+		                    max_count &lt;= "1000"; -- 8 seconds
+		                when "100" =&gt;
+		                    max_count &lt;= "1001"; -- 9 seconds
+		                when "101" =&gt;
+		                    max_count &lt;= "1010"; -- 10 seconds
+		                when "110" =&gt;
+		                    max_count &lt;= "1011"; -- 11 seconds
+		                when "111" =&gt;
+		                    max_count &lt;= "1100"; -- 12 seconds
+		                when others =&gt;
+		                    max_count &lt;= "0101"; -- 5 seconds
+	                end case;
+                    
+                when PRE_HEATING =&gt;
+                    preheating &lt;= '1';
+                    insertFood &lt;= '0';
+                    if counterPreheat = max_count then
+                        donePreheat &lt;= '1';
+                        counterPreheat &lt;= "0000";
+                    else
+                        counterPreheat &lt;= counterPreheat + 1;
+                    end if;
+                    
+                when INSERT_FOOD =&gt;
+                    donePreheat &lt;= '0';
+                    preheating &lt;= '0';
+                    insertFood &lt;= '1';
+                    if counter5 /= "000" then
+                        counter5 &lt;= counter5 - 1;
+                    end if;
+                    
+                when COOKING =&gt;
+                    preheating &lt;= '0';
+                    insertFood &lt;= '0';
+                    cook &lt;= '1';
+                    if counter30 /= "00000" then
+                        counter30 &lt;= counter30 - 1;
+                    end if;
+            end case;
+        end if;
+    end process;
+
+    counter5_out &lt;= counter5;
+    counter30_out &lt;= counter30;
+    ck &lt;= cook;
+end Behavioral;
+</vhdl>
+  <vhdl name="Binary_to_decimal_converter">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY Binary_to_decimal_converter IS
+  PORT (
+ Bin_num: in std_logic_vector(7 downto 0);
+  		Unit: out std_logic_vector(3 downto 0);
+  		Decimal: out std_logic_vector(3 downto 0)  
+    );
+END Binary_to_decimal_converter;
+
+ARCHITECTURE comport OF Binary_to_decimal_converter IS
+
+signal num_int: integer:=0;
+signal u,z: integer:=0;
+BEGIN
+
+	num_int&lt;=conv_integer(bin_num);
+	z&lt;=num_int / 10;
+	u&lt;=num_int rem 10;
+	process(u)
+	begin
+		case u is
+		when 0 =&gt; unit &lt;= x"0";
+		when 1 =&gt; unit &lt;= x"1";
+		when 2 =&gt; unit &lt;= x"2";
+		when 3 =&gt; unit &lt;= x"3";
+		when 4 =&gt; unit &lt;= x"4";
+		when 5 =&gt; unit &lt;= x"5";
+		when 6 =&gt; unit &lt;= x"6";
+		when 7 =&gt; unit &lt;= x"7";
+		when 8 =&gt; unit &lt;= x"8";
+		when 9 =&gt; unit &lt;= x"9";
+		when others =&gt; unit &lt;=x"f";
+		end case;
+	end process;
+	process(z)
+	begin
+		case z is
+		when 0 =&gt; Decimal &lt;= x"0";
+		when 1 =&gt; Decimal &lt;= x"1";
+		when 2 =&gt; Decimal &lt;= x"2";
+		when 3 =&gt; Decimal &lt;= x"3";
+		when 4 =&gt; Decimal &lt;= x"4";
+		when 5 =&gt; Decimal &lt;= x"5";
+		when 6 =&gt; Decimal &lt;= x"6";
+		when 7 =&gt; Decimal &lt;= x"7";
+		when 8 =&gt; Decimal &lt;= x"8";
+		when 9 =&gt; Decimal &lt;= x"9";
+		when others =&gt; Decimal &lt;=x"f";
+		end case;
+	end process;
+		 
+
+	
+END comport;
+</vhdl>
+  <vhdl name="CuptorVechi">library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
+
+entity CuptorVechi is
+    Port ( clk : in  STD_LOGIC;
+           rst : in  STD_LOGIC;
+           start: in STD_LOGIC;
+           sel : in  STD_LOGIC_VECTOR(2 downto 0);
+           preheating: out STD_LOGIC;
+           insertFood: out STD_LOGIC;
+           ck: out STD_LOGIC;
+           counter5_out: out STD_LOGIC_VECTOR(2 downto 0); 
+           counter30_out: out STD_LOGIC_VECTOR(4 downto 0)
+
+         );
+end CuptorVechi;
+
+architecture Behavioral of CuptorVechi is
+    signal max_count : std_logic_vector(3 downto 0);
+    signal counter: std_logic_vector(3 downto 0) := "0000";
+    signal enableCounter5 : std_logic := '0';
+    signal counter5: std_logic_vector(2 downto 0) := "101";
+    signal cooking: std_logic := '0';
+begin
+
+    SELECT_HEATING_TIME: process(sel)
+    begin 
+        case sel is
+            when "000" =&gt;
+                max_count &lt;= "0101"; -- 5 seconds
+            when "001" =&gt;
+                max_count &lt;= "0110"; -- 6 seconds
+            when "010" =&gt;
+                max_count &lt;= "0111"; -- 7 seconds
+            when "011" =&gt;
+                max_count &lt;= "1000"; -- 8 seconds
+            when "100" =&gt;
+                max_count &lt;= "1001"; -- 9 seconds
+            when "101" =&gt;
+                max_count &lt;= "1010"; -- 10 seconds
+            when "110" =&gt;
+                max_count &lt;= "1011"; -- 11 seconds
+            when "111" =&gt;
+                max_count &lt;= "1100"; -- 12 seconds
+            when others =&gt;
+                max_count &lt;= "0101"; -- 5 seconds
+        end case;
+    end process;
+
+    PRE_HEATING: process(clk, rst, start)
+    variable enable : std_logic := '0';
+    variable counter5_var: std_logic_vector(2 downto 0) := "000";
+    variable counter30_var: std_logic_vector(4 downto 0) := "00000";
+    begin
+    	   -- Preheating timer start 
+        if (start = '1' and enableCounter5 = '0' and cooking = '0') then 
+            enable := '1';
+            preheating &lt;= '1';
+        elsif (rst = '1' )then 
+            enable := '0';
+            counter &lt;= "0000";
+            preheating &lt;= '0';
+            insertFood &lt;= '0';
+            cooking &lt;= '0';
+            enableCounter5 &lt;= '0';
+        end if;
+
+        -- Preheating timer
+        if rising_edge(clk) and enable = '1' then 
+            if counter = max_count then 
+                preheating &lt;= '0';
+                insertFood &lt;= '1';
+                enableCounter5 &lt;= '1';
+                enable := '0';
+                counter5_var := "100"; 
+            else 
+                counter &lt;= counter + 1;
+            end if;
+        end if;
+
+        -- Inserting food timer logic
+        if rising_edge(clk) and enableCounter5 = '1' then 
+            if counter5_var = "000" then 
+	            enable := '0';
+	            counter &lt;= "0000";
+	            preheating &lt;= '0';
+	            insertFood &lt;= '0';
+	            cooking &lt;= '0';
+	            enableCounter5 &lt;= '0';
+            else 
+                counter5_var := counter5_var - 1;
+            end if;
+        end if;
+
+        -- Inserting food button pressed logic
+        if rising_edge(clk) and start = '1' and enableCounter5 = '1' then
+	       enable := '0';
+	       counter &lt;= "0000";
+            preheating &lt;= '0';
+	       insertFood &lt;= '0';
+	       cooking &lt;= '0';
+	       enableCounter5 &lt;= '0';
+            cooking &lt;= '1';
+            counter30_var := "11110";
+        end if;
+
+
+	   -- Cooking logic 
+        if rising_edge(clk) and cooking = '1' then 
+		  if counter30_var = "00000" then 
+	            enable := '0';
+	            counter &lt;= "0000";
+	            preheating &lt;= '0';
+	            insertFood &lt;= '0';
+	            cooking &lt;= '0';
+	            enableCounter5 &lt;= '0';
+            else 
+                counter30_var := counter30_var - 1;
+            end if;
+        end if;
+        
+       counter5 &lt;= counter5_var;
+       counter5_out &lt;= counter5;
+       counter30_out &lt;= counter30_var;
+
+	end process;
+	ck &lt;= cooking; 
+end Behavioral; </vhdl>
+  <vhdl name="hex2_7seg">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY hex2_7seg IS
+  PORT (
+  	hex_in : in std_logic_vector(3 downto 0);
+  	a_b_c_d_e_f_g : out std_logic_vector(6 downto 0)
+    );
+END hex2_7seg;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF hex2_7seg IS
+
+BEGIN
+
+a_b_c_d_e_f_g &lt;=   "0000001" when hex_in = x"0" else
+                   "1001111" when hex_in = x"1" else
+                   "0010010" when hex_in = x"2" else
+                   "0000110" when hex_in = x"3" else
+                   "1001100" when hex_in = x"4" else
+                   "0100100" when hex_in = x"5" else
+                   "0100000" when hex_in = x"6" else
+                   "0001111" when hex_in = x"7" else
+                   "0000000" when hex_in = x"8" else
+                   "0000100" when hex_in = x"9" else
+                   "0001000" when hex_in = x"A" else
+                   "1100000" when hex_in = x"B" else
+                   "0110000" when hex_in = x"C" else
+                   "1000010" when hex_in = x"D" else 
+                   "0110000" when hex_in = x"E" else
+                   "0111000" when hex_in = x"F" else
+                   "1111111";
+
+END TypeArchitecture;</vhdl>
+</project>
